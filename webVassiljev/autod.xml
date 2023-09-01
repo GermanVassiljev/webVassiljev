@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<autod>
+	<auto>
+		<autonumber>
+		123ABC
+		</autonumber>
+		<mark>
+			BMW
+		</mark>
+		<v_aasta>
+			2016
+		</v_aasta>
+		<omanik>
+			Vladimir
+		</omanik>
+	</auto>
+	
+	<auto>
+		<autonumber>
+			321LKV
+		</autonumber>
+		<mark>
+			Toyota
+		</mark>
+		<v_aasta>
+			2020
+		</v_aasta>
+		<omanik>
+			Petrovich
+		</omanik>
+	</auto>
+	
+	<auto>
+		<autonumber>
+			279BCE
+		</autonumber>
+		<mark>
+			Ford
+		</mark>
+		<v_aasta>
+			2016
+		</v_aasta>
+		<omanik>
+			Andrey
+		</omanik>
+	</auto>
+
+	<auto>
+		<autonumber>
+			709IQB
+		</autonumber>
+		<mark>
+			Mercedes
+		</mark>
+		<v_aasta>
+			2002
+		</v_aasta>
+		<omanik>
+			Fedor
+		</omanik>
+	</auto>
+
+</autod>
