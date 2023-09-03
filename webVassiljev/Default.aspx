@@ -4,12 +4,12 @@
         <title>Autode leht</title>
     </head>
     <body>
-        <h1>Autod.xml failis tehtud autodeLisa.xslt laused/päringud</h1>
+        <h1>Ülesanned. Failid: autod_.xml ja auto_lisa.xslt</h1>
         <form id="form1" runat="server">
             <div>
                 <asp:Xml ID="xml" runat="server"
-                    DocumentSource="~/autod.xml"
-                    TransformSource="~/autoLisa.xslt" />
+                    DocumentSource="~/autod_.xml"
+                    TransformSource="~/auto_lisa.xslt" />
             </div>
         </form>
     </body>

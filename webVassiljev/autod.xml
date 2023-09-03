@@ -5,59 +5,129 @@
 		123ABC
 		</autonumber>
 		<mark>
-			BMW
-		</mark>
-		<v_aasta>
-			2016
-		</v_aasta>
-		<omanik>
-			Vladimir
-		</omanik>
-	</auto>
-	
-	<auto>
-		<autonumber>
-			321LKV
-		</autonumber>
-		<mark>
 			Toyota
 		</mark>
 		<v_aasta>
-			2020
+			2015
 		</v_aasta>
-		<omanik>
-			Petrovich
-		</omanik>
+		<omanik>Karl Raudsepp</omanik>
 	</auto>
 	
 	<auto>
 		<autonumber>
-			279BCE
+			456XYZ
 		</autonumber>
 		<mark>
 			Ford
 		</mark>
 		<v_aasta>
-			2016
+			2004
 		</v_aasta>
-		<omanik>
-			Andrey
-		</omanik>
+		<omanik>Liina Ivanova</omanik>
+	</auto>
+	
+	<auto>
+		<autonumber>
+			789DEF
+		</autonumber>
+		<mark>
+			BMW
+		</mark>
+		<v_aasta>
+			2007
+		</v_aasta>
+		<omanik>Martin Sviridov</omanik>
 	</auto>
 
 	<auto>
 		<autonumber>
-			709IQB
+			101GHI
 		</autonumber>
 		<mark>
-			Mercedes
+			Volkswagen
 		</mark>
 		<v_aasta>
-			2002
+			2019
 		</v_aasta>
-		<omanik>
-			Fedor
-		</omanik>
+		<omanik>Laura Kask</omanik>
+	</auto>
+
+	<auto>
+		<autonumber>
+			567STU
+		</autonumber>
+		<mark>
+			Honda
+		</mark>
+		<v_aasta>
+			2010
+		</v_aasta>
+		<omanik>Dmitri Mägi</omanik>
+	</auto>
+
+	<auto>
+		<autonumber>
+			890YZA
+		</autonumber>
+		<mark>
+			Audi
+		</mark>
+		<v_aasta>
+			2003
+		</v_aasta>
+		<omanik>Anu Petrov</omanik>
+	</auto>
+
+	<auto>
+		<autonumber>
+			123BCD
+		</autonumber>
+		<mark>
+			Mercedes-Benz
+		</mark>
+		<v_aasta>
+			2018
+		</v_aasta>
+		<omanik>Jaan Smirnov</omanik>
+	</auto>
+
+	<auto>
+		<autonumber>
+			456EFG
+		</autonumber>
+		<mark>
+			Nissan
+		</mark>
+		<v_aasta>
+			2005
+		</v_aasta>
+		<omanik>Olga Tamm</omanik>
+	</auto>
+
+	<auto>
+		<autonumber>
+			789HIJ
+		</autonumber>
+		<mark>
+			Hyundai
+		</mark>
+		<v_aasta>
+			2013
+		</v_aasta>
+		<omanik>Mihkel Järve</omanik>
+	</auto>
+
+	<auto>
+		<autonumber>
+			012KLM
+		</autonumber>
+		<mark>
+			Volvo
+		</mark>
+		<v_aasta>
+			2021
+		</v_aasta>
+		<omanik>Irina Leppik</omanik>
 	</auto>
 
 </autod>

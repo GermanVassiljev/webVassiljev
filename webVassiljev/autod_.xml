@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<autod_>
+	<auto>
+		<autonumber>
+			123ABC
+		</autonumber>
+		<perenimi>Raudsepp</perenimi>
+	</auto>
+
+	<auto>
+		<autonumber>
+			456XYZ
+		</autonumber>
+		<perenimi>Ivanova</perenimi>
+	</auto>
+
+	<auto>
+		<autonumber>
+			785DEF
+		</autonumber>
+		<perenimi>Sviridov</perenimi>
+	</auto>
+
+	<auto>
+		<autonumber>
+			101GHI
+		</autonumber>
+		<perenimi>Kaalikas</perenimi>
+	</auto>
+
+	<auto>
+		<autonumber>
+			567STU
+		</autonumber>
+		<perenimi>Mägi</perenimi>
+	</auto>
+
+	<auto>
+		<autonumber>
+			890YZA
+		</autonumber>
+		<perenimi>Petrov</perenimi>
+	</auto>
+
+	<auto>
+		<autonumber>
+			123BCD
+		</autonumber>
+		<perenimi>Smirnov</perenimi>
+	</auto>
+
+	<auto>
+		<autonumber>
+			456EFG
+		</autonumber>
+		<perenimi>Tamm</perenimi>
+	</auto>
+
+	<auto>
+		<autonumber>
+			789HIJ
+		</autonumber>
+		<perenimi>Järve</perenimi>
+	</auto>
+
+	<auto>
+		<autonumber>
+			012KLM
+		</autonumber>
+		<perenimi>Leppik</perenimi>
+	</auto>
+
+</autod_>
