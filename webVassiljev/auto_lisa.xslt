@@ -59,14 +59,111 @@
 		<br/>	
 		
 		Kui registrimärgi viimane number on 5, siis teata, et ülevaatuse kuu on juuli:
-		<xsl:variable name="count">
-		  <xsl:for-each select="autod_/auto/autonumber">
-			<xsl:variable name="arved" select="translate(., translate(., '0123456789', ''), '')"/>
-			<xsl:if test="substring(translate(autod_/auto/autonumber, translate(autod_/auto/autonumber, '0123456789', ''), ''), string-length(translate(autod_/auto/autonumber, translate(autod_/auto/autonumber, '0123456789', ''), ''))) = '5'">
-			  <xsl:value-of select="concat(. , ' Teie ülevaatuse kuu on juuli!')"/>
+		<xsl:value-of select="concat(autod_/auto/autonumber[substring(translate(., translate(., '0123456789', ''), ''), string-length(translate(., translate(., '0123456789', ''), ''))) = '5'], ' Teie ülevaatusekuu on juuli.')"/>
+		<br/>
+		
+		Teata iga registrinumbri puhul, millises kuus auto ülevaatusele peab minema:
+		<ul>
+			<xsl:for-each select="autod_/auto/autonumber">
+				<xsl:variable name="arved" select="translate(., translate(., '0123456789', ''), '')"/>
+				<li>
+					<xsl:value-of select="concat(., ' Teie ülevaatuse kuu on ', substring($arved, string-length($arved))+2)"/>
+				</li>
+			</xsl:for-each>
+		</ul>
+		
+		<br/>
+		Kõik perekonnanimed, ja lisa iga perekonnanime ette tema järjekorranumber:
+		<ol>
+			<xsl:for-each select="autod_/auto">
+				<li>
+					<xsl:value-of select="concat(perenimi, ' ', autonumber)"/>
+				</li>
+			</xsl:for-each>
+		</ol>
+		<br/>
+		
+		Väljasta andmed tabelina: registrinumbrid ühes ning perekonnanimed teises tulbas:
+		<style>
+			table {
+				border: 1px solid black;
+			}
+			tr
+			{
+				background-color:white;
+			}
+			tr:nth-child(4n+2),
+			tr:nth-child(4n+4)
+			{
+				background-color:lightgray;
+			}
+		</style>
+		<table>
+			<tr>
+				<th>Perekonnanimi</th>
+				<th>Autonumber</th>
+			</tr>
+			<xsl:for-each select="autod_/auto">
+				<tr>
+					<td>
+						<xsl:value-of select="perenimi"/>
+					</td>
+					<td>
+						<xsl:value-of select="autonumber"/>
+					</td>
+				</tr>
+			</xsl:for-each>
+		</table>
+		<br/>
+		
+		----------------------
+		<br/>
+		Esimene:
+		<xsl:for-each select="autod_/auto/autonumber">
+			<xsl:variable name="numbrid" select="translate(., translate(., '0123456789', ''), '')"/>
+			<xsl:variable name="tahtid" select="translate(., translate(., 'QWERTYUIOPASDFGHJKLZXCVBNM', ''), '')"/>
+			<xsl:if test="substring($numbrid, string-length($numbrid))+2 ='8' and substring(., 1, 1) = '2'">
+				<style>
+				[name="kolane"] {
+					background-color:yellow;
+				}
+				</style>
+				<div name="kolane">
+					<xsl:value-of select="."/>
+				</div>
 			</xsl:if>
-		  </xsl:for-each>
-		</xsl:variable>
-
+			<xsl:if test="substring($numbrid, string-length($numbrid))+2 ='5' and substring($tahtid, string-length($tahtid)) = 'K'">
+				<style>
+				[name="punane"] {
+					background-color:red;
+				}
+				</style>
+				<div name="punane">
+					<xsl:value-of select="."/>
+				</div>
+			</xsl:if>
+		</xsl:for-each>
+		<br/>
+		
+		Teine:
+		<xsl:value-of select="count(autod_/auto/perenimi[string-length(.) &lt; 6 or string-length(.) = 6])"/>
+		<ol>
+			<xsl:for-each select="autod_/auto/perenimi[string-length(.) > 6]">
+				<li>
+					<xsl:value-of select="concat(substring(., 1, 1), '.')"/>
+				</li>
+			</xsl:for-each>	
+		</ol>
+		<br/>
+		
+		Kolme:
+		<ol>
+			<xsl:for-each select="autod_/auto">
+				<li>
+				<xsl:variable name="numbrid" select="translate(autonumber, translate(autonumber, '0123456789', ''), '')"/>
+				<xsl:value-of select="concat($numbrid,  perenimi)"/>
+				</li>
+			</xsl:for-each>
+		</ol>
 	</xsl:template>
 </xsl:stylesheet>
